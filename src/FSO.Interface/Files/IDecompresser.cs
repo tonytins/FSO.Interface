@@ -17,7 +17,7 @@ namespace FSO.Interface.Files
         /// </summary>
         /// <param name="data">The data to be compressed.</param>
         /// <returns>An array of bytes with compressed data.</returns>
-        IEnumerable<byte> Compress(IEnumerable<byte> data);
+        IEnumerable<byte> Compress(byte[] data);
 
         /// <summary>
         /// Decompresses data and returns it as an
@@ -25,6 +25,6 @@ namespace FSO.Interface.Files
         /// </summary>
         /// <param name="data">The data to decompress.</param>
         /// <returns>An uncompressed array of bytes.</returns>
-        IEnumerable<byte> Decompress(IEnumerable<byte> data);
+        IEnumerable<byte> Decompress(byte[] data);
     }
 }

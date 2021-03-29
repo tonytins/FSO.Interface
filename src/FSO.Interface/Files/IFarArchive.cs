@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using FSO.Interface.Files.Models;
 
-namespace FSO.Interface.Files.Models
+namespace FSO.Interface.Files
 {
     /// <summary>
     /// Represents a single FAR entry
