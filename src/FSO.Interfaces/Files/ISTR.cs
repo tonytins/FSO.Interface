@@ -2,7 +2,7 @@ using FSO.Interfaces.Files.Models;
 
 namespace FSO.Interfaces.Files
 {
-    public interface ISTR : IIIffChunk
+    public interface ISTR : IIffChunk
     {
         STRLanguageSet GetLanguageSet(STRLangCode language);
         bool IsSetInit(STRLangCode language);

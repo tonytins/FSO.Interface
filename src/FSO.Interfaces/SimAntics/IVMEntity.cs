@@ -16,6 +16,6 @@ namespace FSO.Interfaces.SimAntics
         bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately);
         bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately, IVMEntity stackOBJ);
         bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately, IVMEntity stackOBJ, IEnumerable<short> args);
-        // VMBHAVOwnerPair GetBHAVWithOwner(ushort ActionID, IVMContext context)
+        VMBHAVOwnerPair GetBHAVWithOwner(ushort ActionID, IVMContext context);
     }
 }

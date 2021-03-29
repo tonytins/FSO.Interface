@@ -19,7 +19,7 @@ namespace FSO.Interfaces.SimAntics
         // VMSolidResult SolidToAvatars(LotTilePos pos);
         // IsOutOfBounds(LotTilePos pos);
         // VMPlacementResult GetAvatarPlace(IVMEntity target, LotTilePos pos, Direction dir);
-        // VMPlacementResult GetObjPlace(VMEntity target, LotTilePos pos, Direction dir);
+        // VMPlacementResult GetObjPlace(IVMEntity target, LotTilePos pos, Direction dir);
         ushort GetObjectRoom(IVMEntity obj);
         // ushort GetRoomAt(LotTilePos pos);
         short GetRoomScore(ushort room);
