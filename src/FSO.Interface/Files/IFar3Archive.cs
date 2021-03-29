@@ -10,13 +10,6 @@ namespace FSO.Interface.Files
     public interface IFar3Archive : IDisposable
     {
         /// <summary>
-        /// Get entry based on a key value pair.
-        /// </summary>
-        /// <param name="entry">A dictionary representing the entry.</returns>
-        /// <returns>A far entry or null if entry wasn't found</returns>
-        IEnumerable<byte> GetEntry(KeyValuePair<string, IEnumerable<byte>> entry);
-
-        /// <summary>
         /// Get entry's data from a FAR3 entry instance.
         /// </summary>
         /// <param name="entry">Far entry instance</param>
@@ -43,6 +36,12 @@ namespace FSO.Interface.Files
         /// </summary>
         /// <returns>A List of KeyValuePair instances.</returns>
         IEnumerable<KeyValuePair<uint, IEnumerable<byte>>> GetAllEntries();
+
+        /// <summary>
+        /// Returns the entries of this FAR3Archive as FAR3Entry instances in a List.
+        /// </summary>
+        /// <returns>Returns the entries of this FAR3Archive as FAR3Entry instances in a List.</returns>
+        IEnumerable<Far3Entry> GetAllFar3Entries();
 
         /// <summary>
         /// Gets an entry's data from a filename.
