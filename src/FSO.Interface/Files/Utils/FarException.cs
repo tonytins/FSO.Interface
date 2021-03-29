@@ -1,6 +1,6 @@
 using System;
 
-namespace FSO.Interface.Files
+namespace FSO.Interface.Files.Utils
 {
     /// <summary>
     /// Represents an exception thrown by a FAR3Archive instance.

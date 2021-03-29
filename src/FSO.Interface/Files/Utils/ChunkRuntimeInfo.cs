@@ -1,4 +1,4 @@
-﻿namespace FSO.Interface.Files
+﻿namespace FSO.Interface.Files.Utils
 {
     public enum ChunkRuntimeState
     {

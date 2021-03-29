@@ -1,3 +1,5 @@
+using FSO.Interface.Files.Utils;
+
 namespace FSO.Interface.Files
 {
     public interface IIoProxy
@@ -7,5 +9,7 @@ namespace FSO.Interface.Files
         int ReadInt32();
         uint ReadUInt32();
         float ReadFloat();
+
+        IoBuffer Io { get; set; }
     }
 }

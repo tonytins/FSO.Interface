@@ -1,6 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
+using FSO.Interface.Files.Utils;
 
 namespace FSO.Interface.Files
 {
