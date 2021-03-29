@@ -10,12 +10,29 @@ namespace FSO.Interface.Files
     /// </summary>
     public interface IFarArchive : IDisposable
     {
+
+        /// <summary>
+        /// The offset into the archive of the manifest.
+        /// </summary>
+        public uint ManifestOffset { get; }
+
+        /// <summary>
+        /// The number of files/entries in the archive.
+        /// </summary>
+        public uint NumFiles { get; }
+
+        /// <summary>
+        /// Gets all entries in the archive.
+        /// </summary>
+        /// <returns>A List of KeyValuePair instances.</returns>
+        IEnumerable<IDictionary<string, IEnumerable<byte>>> GetAllEntries();
+
         /// <summary>
         /// Get entry based on a key value pair.
         /// </summary>
         /// <param name="entry">A dictionary representing the entry.</returns>
         /// <returns>A far entry or null if entry wasn't found</returns>
-        IEnumerable<byte> GetEntry(IDictionary<string, IEnumerable<byte>> entry);
+        IEnumerable<byte> GetEntry(KeyValuePair<string, IEnumerable<byte>> entry);
 
         /// <summary>
         /// Get entry's data from a FAR entry instance.

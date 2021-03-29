@@ -14,7 +14,7 @@ namespace FSO.Interface.Files
         /// </summary>
         /// <param name="entry">A dictionary representing the entry.</returns>
         /// <returns>A far entry or null if entry wasn't found</returns>
-        IEnumerable<byte> GetEntry(IDictionary<string, IEnumerable<byte>> entry);
+        IEnumerable<byte> GetEntry(KeyValuePair<string, IEnumerable<byte>> entry);
 
         /// <summary>
         /// Get entry's data from a FAR3 entry instance.
@@ -37,5 +37,18 @@ namespace FSO.Interface.Files
         /// <param name="Id">The Id of the entry</param>
         /// <returns>The entry's data</returns>
         IEnumerable<byte> GetItemById(long Id);
+
+        /// <summary>
+        /// Returns the entries of this FAR3Archive as byte arrays together with their corresponding FileIDs.
+        /// </summary>
+        /// <returns>A List of KeyValuePair instances.</returns>
+        IEnumerable<KeyValuePair<uint, IEnumerable<byte>>> GetAllEntries();
+
+        /// <summary>
+        /// Gets an entry's data from a filename.
+        /// </summary>
+        /// <param name="filename">The filename of the entry.</param>
+        /// <returns>The entry's data.</returns>
+        IEnumerable<byte> this[string filename] { get; }
     }
 }
