@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -17,6 +18,10 @@ namespace FSO.Interface.Files
         IEnumerable<byte> ChunkData { get; set; }
         IIffFile ChunkParent { get; set; }
 
+        ChunkRuntimeState RuntimeInfo { get; set; }
+
         void Read(IIffFile iff, Stream stream);
+
+        void Dispose();
     }
 }
