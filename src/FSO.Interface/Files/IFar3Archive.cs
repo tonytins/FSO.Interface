@@ -29,14 +29,14 @@ namespace FSO.Interface.Files
         /// </summary>
         /// <param name="FileID">Entry's file Id</param>
         /// <returns>Entry's data</returns>
-        IEnumerable<byte> GetItemById(uint FileID);
+        IEnumerable<byte> GetItemById(uint fileId);
 
         /// <summary>
         /// Get entry based on Id
         /// </summary>
         /// <param name="Id">The Id of the entry</param>
         /// <returns>The entry's data</returns>
-        IEnumerable<byte> GetItemById(long Id);
+        IEnumerable<byte> GetItemById(ulong id);
 
         /// <summary>
         /// Returns the entries of this FAR3Archive as byte arrays together with their corresponding FileIDs.

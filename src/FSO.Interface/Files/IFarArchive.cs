@@ -28,11 +28,17 @@ namespace FSO.Interface.Files
         IEnumerable<IDictionary<string, IEnumerable<byte>>> GetAllEntries();
 
         /// <summary>
-        /// Get entry based on a key value pair.
+        /// Returns a list of all FarEntry instances in this archive.
         /// </summary>
-        /// <param name="entry">A dictionary representing the entry.</returns>
-        /// <returns>A far entry or null if entry wasn't found</returns>
-        IEnumerable<byte> GetEntry(KeyValuePair<string, IEnumerable<byte>> entry);
+        /// <returns></returns>
+        IEnumerable<Far1Entry> GetAllFarEntries();
+
+        /// <summary>
+        /// Gets an entry based on a KeyValuePair.
+        /// </summary>
+        /// <param name="entry">A KeyValuePair (string, byte[]) representing the entry. The byte array can be null.</param>
+        /// <returns>A FarEntry or null if the entry wasn't found.</returns>
+        IEnumerable<byte> GetEntry(KeyValuePair<string, byte[]> entry);
 
         /// <summary>
         /// Get entry's data from a FAR entry instance.
