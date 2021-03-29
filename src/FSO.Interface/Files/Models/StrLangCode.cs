@@ -1,6 +1,6 @@
 namespace FSO.Interface.Files.Models
 {
-    public enum STRLangCode : byte
+    public enum StrLangCode : byte
     {
         Default = 0,
         EnglishUS = 1,

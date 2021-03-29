@@ -2,17 +2,17 @@ using FSO.Interface.Files.Models;
 
 namespace FSO.Interface.Files
 {
-    public interface ISTR : IIffChunk
+    public interface ISTR : IIffChunkWriter
     {
-        STRLanguageSet GetLanguageSet(STRLangCode language);
-        bool IsSetInit(STRLangCode language);
-        void InitLanguageSet(STRLangCode language);
+        StrLanguageSet GetLanguageSet(StrLangCode language);
+        bool IsSetInit(StrLangCode language);
+        void InitLanguageSet(StrLangCode language);
         void GetString(int index);
         void SetString(int index, string value);
-        void SetString(int index, string value, STRLangCode lang);
+        void SetString(int index, string value, StrLangCode lang);
         void SwapString(int srcindex, int intdstindex);
-        void InsertString(int index, STRItem item);
+        void InsertString(int index, StrItem item);
         void RemoveString(int index);
-        STRItem GetStringEntry(int index);
+        StrItem GetStringEntry(int index);
     }
 }
