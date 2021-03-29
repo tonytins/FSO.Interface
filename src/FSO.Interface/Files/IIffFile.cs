@@ -1,6 +1,6 @@
 namespace FSO.Interface.Files
 {
-    public interface IIffFile : IFileInfoUtilizer
+    public interface IIffFile : IFileInfoUtilizer, IFileStream
     {
         T Get<T>(ushort id);
         void RemoveChunk(IIffFile chunk);
