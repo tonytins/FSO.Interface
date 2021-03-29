@@ -7,7 +7,7 @@ namespace FSO.Interface.Files
         StrLanguageSet GetLanguageSet(StrLangCode language);
         bool IsSetInit(StrLangCode language);
         void InitLanguageSet(StrLangCode language);
-        void GetString(int index);
+        string GetString(int index);
         void SetString(int index, string value);
         void SetString(int index, string value, StrLangCode lang);
         void SwapString(int srcindex, int intdstindex);
