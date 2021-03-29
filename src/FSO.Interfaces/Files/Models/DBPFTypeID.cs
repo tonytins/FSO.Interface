@@ -1,4 +1,4 @@
-namespace FSO.Interfaces.Files
+namespace FSO.Interfaces.Files.Models
 {
     public enum DBPFTypeID : uint
     {

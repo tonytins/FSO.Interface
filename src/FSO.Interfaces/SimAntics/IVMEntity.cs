@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FSO.Interfaces.SimAntics.Models;
 
 namespace FSO.Interfaces.SimAntics
 {

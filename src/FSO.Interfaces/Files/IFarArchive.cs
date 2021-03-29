@@ -15,7 +15,7 @@ namespace FSO.Interfaces.Files
         /// </summary>
         /// <param name="entry">A dictionary representing the entry.</returns>
         /// <returns>A far entry or null if entry wasn't found</returns>
-        IEnumerable<byte> GetEntry(Dictionary<string, IEnumerable<byte>> entry);
+        IEnumerable<byte> GetEntry(IDictionary<string, IEnumerable<byte>> entry);
 
         /// <summary>
         /// Get entry's data from a FAR entry instance.

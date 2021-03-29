@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using FSO.Interfaces.Files.Models;
 
 namespace FSO.Interfaces.Files
 {
@@ -10,6 +11,6 @@ namespace FSO.Interfaces.Files
 
         IEnumerable<byte> GetItemByID(ulong Id);
 
-        IEnumerable<Dictionary<uint, IEnumerable<byte>>> GetItemsByType(DBPFTypeID type);
+        IEnumerable<IDictionary<uint, IEnumerable<byte>>> GetItemsByType(DBPFTypeID type);
     }
 }

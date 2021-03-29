@@ -1,4 +1,4 @@
-namespace FSO.Interfaces.Files
+namespace FSO.Interfaces.Files.Models
 {
     public record OTFTableKey(string Id, string Label, int Value);
 }

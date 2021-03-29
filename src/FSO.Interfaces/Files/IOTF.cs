@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FSO.Interfaces.Files.Models;
 
 namespace FSO.Interfaces.Files
 {

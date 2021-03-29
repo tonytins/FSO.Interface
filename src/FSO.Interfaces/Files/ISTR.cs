@@ -1,3 +1,5 @@
+using FSO.Interfaces.Files.Models;
+
 namespace FSO.Interfaces.Files
 {
     public interface ISTR : IIIffChunk
