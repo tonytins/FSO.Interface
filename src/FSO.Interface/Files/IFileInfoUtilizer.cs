@@ -1,7 +1,6 @@
-namespace FSO.Interface.Files
+namespace FSO.Interface.Files;
+
+public interface IFileInfoUtilizer
 {
-    public interface IFileInfoUtilizer
-    {
-        void SetFilename(string filename);
-    }
+    void SetFilename(string filename);
 }

@@ -1,13 +1,10 @@
-using System.Collections.Generic;
+namespace FSO.Interface.Files;
 
-namespace FSO.Interface.Files
+public interface IUTK
 {
-    public interface IUTK
-    {
-        IEnumerable<byte> DecompressWav { get; }
+    IEnumerable<byte> DecompressWav { get; }
 
-        void UTKDecode();
+    void UTKDecode();
 
-        void DecodeFrame();
-    }
+    void DecodeFrame();
 }

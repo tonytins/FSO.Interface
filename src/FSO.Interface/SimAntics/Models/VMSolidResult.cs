@@ -1,8 +1,7 @@
-namespace FSO.Interface.SimAntics.Models
+namespace FSO.Interface.SimAntics.Models;
+
+public struct VMSolidResult
 {
-    public struct VMSolidResult
-    {
-        public bool Solid;
-        public IVMEntity Chair;
-    }
+    public bool Solid;
+    public IVMEntity Chair;
 }

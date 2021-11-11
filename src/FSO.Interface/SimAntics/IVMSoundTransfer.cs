@@ -1,6 +1,5 @@
-namespace FSO.Interface.SimAntics
+namespace FSO.Interface.SimAntics;
+
+public interface IVMSoundTransfer
 {
-    public interface IVMSoundTransfer
-    {
-    }
 }

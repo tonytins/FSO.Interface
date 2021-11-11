@@ -1,10 +1,7 @@
-using System.IO;
+namespace FSO.Interface.SimAntics;
 
-namespace FSO.Interface.SimAntics
+public interface IVMSerializable
 {
-    public interface IVMSerializable
-    {
-        void SerializeInto(BinaryWriter writer);
-        void Deserialize(BinaryReader reader);
-    }
+    void SerializeInto(BinaryWriter writer);
+    void Deserialize(BinaryReader reader);
 }

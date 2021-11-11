@@ -1,7 +1,6 @@
-namespace FSO.Interface.SimAntics
+namespace FSO.Interface.SimAntics;
+
+public interface IVM
 {
-    public interface IVM
-    {
-        void Init();
-    }
+    void Init();
 }

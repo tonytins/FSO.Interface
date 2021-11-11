@@ -1,9 +1,6 @@
-using System.Collections.Generic;
+namespace FSO.Interface.Files.Models;
 
-namespace FSO.Interface.Files.Models
+public record StrLanguageSet
 {
-    public record StrLanguageSet
-    {
-        public IEnumerable<StrItem> Strings { get; set; }
-    };
-}
+    public IEnumerable<StrItem> Strings { get; set; }
+};

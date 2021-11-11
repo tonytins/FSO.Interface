@@ -1,21 +1,19 @@
-using System.Collections.Generic;
 using FSO.Interface.SimAntics.Models;
 
-namespace FSO.Interface.SimAntics
+namespace FSO.Interface.SimAntics;
+
+public interface IVMEntity
 {
-    public interface IVMEntity
-    {
-        bool GetBadObjects();
-        bool GetBadNames();
-        void UseTreeTableOf(GameObject obj, bool ts1);
-        void UseSemiGlobalTTAB(string sgFile, ushort id, bool ts1);
-        bool IsInUse(IVMContext context, bool multitile);
-        bool IsInUse(IVMContext context, bool multitile, bool stackObjSafety);
-        void TickSounds();
-        IEnumerable<IVMSoundTransfer> GetActiveSounds();
-        bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately);
-        bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately, IVMEntity stackOBJ);
-        bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately, IVMEntity stackOBJ, IEnumerable<short> args);
-        VMBHAVOwnerPair GetBHAVWithOwner(ushort ActionID, IVMContext context);
-    }
+    bool GetBadObjects();
+    bool GetBadNames();
+    void UseTreeTableOf(GameObject obj, bool ts1);
+    void UseSemiGlobalTTAB(string sgFile, ushort id, bool ts1);
+    bool IsInUse(IVMContext context, bool multitile);
+    bool IsInUse(IVMContext context, bool multitile, bool stackObjSafety);
+    void TickSounds();
+    IEnumerable<IVMSoundTransfer> GetActiveSounds();
+    bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately);
+    bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately, IVMEntity stackOBJ);
+    bool ExecuteEntryPoint(int entry, IVMContext context, bool runImmediately, IVMEntity stackOBJ, IEnumerable<short> args);
+    VMBHAVOwnerPair GetBHAVWithOwner(ushort ActionID, IVMContext context);
 }

@@ -1,9 +1,8 @@
 using FSO.Interface.Vitaboy.Models;
 
-namespace FSO.Interface.Vitaboy
+namespace FSO.Interface.Vitaboy;
+
+public interface IBone
 {
-    public interface IBone
-    {
-        Bone Clone();
-    }
+    Bone Clone();
 }

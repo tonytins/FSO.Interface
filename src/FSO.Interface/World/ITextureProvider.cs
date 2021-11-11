@@ -4,12 +4,9 @@
  * http://mozilla.org/MPL/2.0/.
  */
 
-using Microsoft.Xna.Framework.Graphics;
+namespace FSO.Interface.World;
 
-namespace FSO.Interface.World
+public interface ITextureProvider
 {
-    public interface ITextureProvider
-    {
-        Texture2D GetTexture(GraphicsDevice device);
-    }
+    Texture2D GetTexture(GraphicsDevice device);
 }

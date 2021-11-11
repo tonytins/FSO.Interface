@@ -1,7 +1,6 @@
-namespace FSO.Interface.SimAntics
+namespace FSO.Interface.SimAntics;
+
+public interface IGameIffResource
 {
-    public interface IGameIffResource
-    {
-        void Recache();
-    }
+    void Recache();
 }

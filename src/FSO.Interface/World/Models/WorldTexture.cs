@@ -4,12 +4,9 @@
  * http://mozilla.org/MPL/2.0/.
  */
 
-using Microsoft.Xna.Framework.Graphics;
+namespace FSO.Interface.World.Models;
 
-namespace FSO.Interface.World.Models
-{
-    /// <summary>
-    /// A texture used in the game world.
-    /// </summary>
-    public record WorldTexture(Texture2D Pixel, Texture2D ZBuffer);
-}
+/// <summary>
+/// A texture used in the game world.
+/// </summary>
+public record WorldTexture(Texture2D Pixel, Texture2D ZBuffer);

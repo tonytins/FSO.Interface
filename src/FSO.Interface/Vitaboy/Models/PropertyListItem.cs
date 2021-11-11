@@ -1,6 +1,3 @@
-using System.Collections.Generic;
+namespace FSO.Interface.Vitaboy.Models;
 
-namespace FSO.Interface.Vitaboy.Models
-{
-    public record PropertyListItem(Dictionary<string, string> KeyPairs);
-}
+public record PropertyListItem(Dictionary<string, string> KeyPairs);

@@ -1,8 +1,7 @@
-namespace FSO.Interface.Files
+namespace FSO.Interface.Files;
+
+public interface IOBDJ : IffReadWrite
 {
-    public interface IOBDJ : IIffChunkWriter
-    {
-        T GetPropertyByName<T>(string name);
-        void SetPropertyByName(string name, object value);
-    }
+    T GetPropertyByName<T>(string name);
+    void SetPropertyByName(string name, object value);
 }

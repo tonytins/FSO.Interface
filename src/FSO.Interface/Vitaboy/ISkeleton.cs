@@ -1,12 +1,10 @@
-using System.IO;
 using FSO.Interface.Vitaboy.Models;
 
-namespace FSO.Interface.Vitaboy
+namespace FSO.Interface.Vitaboy;
+
+public interface ISkeleton
 {
-    public interface ISkeleton
-    {
-        Bone GetBone(string name);
-        Skeleton Clone();
-        void Read(Stream stream, bool bcf);
-    }
+    Bone GetBone(string name);
+    Skeleton Clone();
+    void Read(Stream stream, bool bcf);
 }

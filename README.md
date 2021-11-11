@@ -6,7 +6,7 @@ This project turns FreeSO's public APIs into interfaces so varies components can
 
 Due to the nature of the library, some changes had to be made to the original API.
 
-- FSO Interface is based on .NET 5 and many models have been turned into records.
+- FSO Interface is based on .NET 6 and many models have been turned into records.
 - Many arrays and lists have been turned into ``IEnumerable``, unless the original API methods requires ``List<>``.
 - ``KeyValuePairs<>`` has been replaced with ``IDictionary<>``.
 
@@ -20,4 +20,4 @@ Note that ``VMSerializable`` is one of the few cases where an interface has alre
 
 ## License
 
-I license this project under the Apache-v2.0 license - see [LICENSE](LICENSE) for details.
+I license this project under the MPL-v2.0 license - see [LICENSE](LICENSE) for details.

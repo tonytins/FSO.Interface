@@ -1,6 +1,3 @@
-using System.Collections.Generic;
+namespace FSO.Interface.Files.Models;
 
-namespace FSO.Interface.Files.Models
-{
-    public record OTFTable(int Id, string Name, IEnumerable<OTFTableKey> Keys);
-}
+public record OTFTable(int Id, string Name, IEnumerable<OTFTableKey> Keys);
