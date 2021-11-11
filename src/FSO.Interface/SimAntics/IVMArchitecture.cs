@@ -1,5 +1,4 @@
 using FSO.Interface.SimAntics.Models;
-using Microsoft.Xna.Framework;
 
 namespace FSO.Interface.SimAntics;
 

@@ -1,9 +1,6 @@
-using System.IO;
+namespace FSO.Interface.Files;
 
-namespace FSO.Interface.Files
+public interface IIffChunkWriter : IIffChunk
 {
-    public interface IIffChunkWriter : IIffChunk
-    {
-        bool Write(IIffFile iff, Stream stream);
-    }
+    bool Write(IIffFile iff, Stream stream);
 }

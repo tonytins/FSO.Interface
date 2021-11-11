@@ -1,5 +1,3 @@
-using Microsoft.Xna.Framework;
-
 namespace FSO.Interface.SimAntics;
 
 public interface IVMContext
