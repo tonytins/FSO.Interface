@@ -1,5 +1,5 @@
 using FSO.Interface.Files;
 
-namespace FSO.Interface.SimAntics.Models;
+namespace FSO.SimAntics.Interface.Models;
 
 public record VMBHAVOwnerPair(IffRead bhav, GameObject owner);

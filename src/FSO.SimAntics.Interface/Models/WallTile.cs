@@ -1,4 +1,4 @@
-namespace FSO.Interface.SimAntics.Models;
+namespace FSO.SimAntics.Interface.Models;
 
 public struct WallTile
 {
@@ -33,15 +33,4 @@ public struct WallTile
     public bool TopRightDoor;
 
     public WallSegments OccupiedWalls;
-}
-
-[Flags]
-public enum WallSegments
-{
-    TopLeft = 1,
-    TopRight = 2,
-    BottomRight = 4,
-    BottomLeft = 8,
-    HorizontalDiag = 16,
-    VerticalDiag = 32
 }

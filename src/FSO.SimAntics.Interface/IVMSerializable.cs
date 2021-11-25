@@ -1,4 +1,4 @@
-namespace FSO.Interface.SimAntics;
+namespace FSO.SimAntics.Interface;
 
 public interface IVMSerializable
 {

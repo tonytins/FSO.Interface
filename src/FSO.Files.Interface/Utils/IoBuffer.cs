@@ -161,14 +161,12 @@ public class IoBuffer : IDisposable
     public string ReadCString(int num, bool trimNull)
     {
         var result = ASCIIEncoding.ASCII.GetString(Reader.ReadBytes(num));
-        if (trimNull)
+        if (!trimNull) return result;
+        /** Trim on \0 **/
+        var io = result.IndexOf('\0');
+        if (io != -1)
         {
-            /** Trim on \0 **/
-            var io = result.IndexOf('\0');
-            if (io != -1)
-            {
-                result = result.Substring(0, io);
-            }
+            result = result.Substring(0, io);
         }
 
         return result;

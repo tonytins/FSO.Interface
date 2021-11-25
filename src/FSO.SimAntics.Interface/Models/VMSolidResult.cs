@@ -1,4 +1,4 @@
-namespace FSO.Interface.SimAntics.Models;
+namespace FSO.SimAntics.Interface.Models;
 
 public struct VMSolidResult
 {

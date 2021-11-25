@@ -1,6 +1,6 @@
-using FSO.Interface.SimAntics.Models;
+using FSO.SimAntics.Interface.Models;
 
-namespace FSO.Interface.SimAntics;
+namespace FSO.SimAntics.Interface;
 
 public interface IVMEntity
 {
