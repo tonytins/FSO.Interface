@@ -1,8 +1,8 @@
 # FSO Interface
 
-This project turns FreeSO's public APIs into interfaces so varies components can be swapped without changing the underlining architecture. It does port over some of FreeSO's models, enums and structs in order to remain compatible.
+FSO Interface transforms FreeSO's public APIs into interfaces so varies components can be swapped without changing the underlining architecture.
 
-## API Changes
+## API Compatibility
 
 Due to the nature of the library, some changes had to be made to the original API.
 
@@ -10,13 +10,9 @@ Due to the nature of the library, some changes had to be made to the original AP
 - Many arrays and lists have been turned into ``IEnumerable``, unless the original API methods requires ``List<>``.
 - ``KeyValuePairs<>`` has been replaced with ``IDictionary<>``.
 
-### Interface conformity
+### VMSerializable
 
-- Any method that use to accept only a specific Iff implementation, now accepts any that implements ``IIffChunk`` interface.
-- Any method that use to accept only a specific class based on ``IVMSerializable`` now only requires that it implement the interface itself.
-- Any method that required a specific class with ``void Read(Stream stream)`` and ``void Write(Stream stream)``, such as the OTFFile, DBPFFile and IffFile classes, now only requires that they implement ``IFileStream``, which carries the same methods.
-
-Note that ``VMSerializable`` is one of the few cases where an interface has already been provided in FreeSO. It was simply been ported over to FSO Interface as ``IVMSerializable``.
+Some classes are actually interfaces in FreeSO, such as ``VMSerializable``, despite lacking the ``I`` prefix. Naturally, FSO Interface incorporates this into its library but has split the interface into two, ``IVMSerializable`` and ``IVMDeserializable``, because not all classes implement both. For compatibility, the ``IVMDeserializable`` interface is used in inputs because it combines both Read and Write methods.
 
 ## License
 

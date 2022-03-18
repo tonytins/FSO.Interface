@@ -3,7 +3,7 @@ namespace FSO.SimAntics.Interface;
 public interface IVMContext
 {
     ulong NextRandom(ulong max);
-    void WallsChanged(IVMArchitecture caller);
+    void WallsChanged(IVMDeserializable caller);
     // ObjectComponent MakeObjectComponent(GameObject obj);
     void UpdateTSOBuildableArea();
     Rectangle GetTSOBuildableArea(int lotSInfo);
