@@ -15,6 +15,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\FSO.Files.Interface\FSO.Files.Interface.csproj" />
+      <ProjectReference Include="..\FSO.SimAntics.Interface\FSO.SimAntics.Interface.csproj" />
+      <ProjectReference Include="..\FSO.Vitaboy.Interface\FSO.Vitaboy.Interface.csproj" />
     </ItemGroup>
 
 </Project>
