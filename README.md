@@ -2,17 +2,16 @@
 
 FSO Interface transforms FreeSO's public APIs into interfaces so varies components can be swapped without changing the underlining architecture.
 
-## API Compatibility
+## Compatibility
 
-Due to the nature of the library, some changes had to be made to the original API.
+Due to a strict null-safety policy, some breaking changes had to be made.
 
 - FSO Interface is based on .NET 6 and many models have been turned into records.
-- Many arrays and lists have been turned into ``IEnumerable``, unless the original API methods requires ``List<>``.
-- ``KeyValuePairs<>`` has been replaced with ``IDictionary<>``.
+- Arrays and lists have been turned into ``IEnumerable``while ``KeyValuePairs<>`` has been replaced with ``IDictionary<>`` unless the original API mandates a method from a specified type.
 
 ### VMSerializable
 
-Some classes are actually interfaces in FreeSO, such as ``VMSerializable``, despite lacking the ``I`` prefix. Naturally, FSO Interface incorporates this into its library but has split the interface into two, ``IVMSerializable`` and ``IVMDeserializable``, because not all classes implement both. For compatibility, the ``IVMDeserializable`` interface is used in inputs because it combines both Read and Write methods.
+``VMSerializable`` is actually an interface, despite lacking the ``I`` prefix, and is used all across the game's virtual machine. FSO Interface naturally incorporates this into its library but has split the interface into two, ``IVMSerializable`` and ``IVMDeserializable``, providing Read and R/W functionalities, respectfully. The ``IVMDeserializable`` interface is used within methods that would normally require ``VMSerializable``.
 
 ## License
 
