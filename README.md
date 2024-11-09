@@ -6,7 +6,8 @@ FSO Interface transforms FreeSO's public APIs into interfaces so varies componen
 
 Due to a strict null-safety policy, some breaking changes had to be made.
 
-- FSO Interface is based on .NET 6 and many models have been turned into records.
+- FSO Interface is based on .NET 6 or later.
+- Many models have been turned into records.
 - Arrays and lists have been turned into ``IEnumerable``while ``KeyValuePairs<>`` has been replaced with ``IDictionary<>`` unless the original API mandates a method from a specified type.
 
 ### VMSerializable
